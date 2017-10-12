@@ -409,7 +409,8 @@
         correct = 5 - errors.length;
 
         $("#restext").text('Ваши результаты: ' + correct + '/5 (' + (correct * 20) + '%) верных ответов');
-        if (correct <= 4) $("#restext2").text('Ошибки в вопросах: ' + errors.join(', '));
+        if (correct <= 4) $("#restext2").text('Ошибки в вопросах: ' + errors.join(', '))
+          else $("#restext2").text('')
 
         $('#results').modal('open');
         console.log (errors + ' ' + correct);
