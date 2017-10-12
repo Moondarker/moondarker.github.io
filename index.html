@@ -50,24 +50,16 @@
     <div id="menu" class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#test2" id="test2-button-head">Тест 2</a></li>
-      </ul>
-      <ul class="right hide-on-med-and-down">
         <li><a href="#test1" id="test1-button-head">Тест 1</a></li>
-      </ul>
-      <ul class="right hide-on-med-and-down">
         <li><a href="#index" id="index-button-head">Главная страница</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#test2" id="test2-button-head">Тест 2</a></li>
+        <li><a href="#test2" id="test2-button-head-m">Тест 2</a></li>
+        <li><a href="#test1" id="test1-button-head-m">Тест 1</a></li>
+        <li><a href="#index" id="index-button-head-m">Главная страница</a></li>
       </ul>
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#test1" id="test1-button-head">Тест 1</a></li>
-      </ul>
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#index" id="index-button-head">Главная страница</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">Меню</i></a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <div class="section no-pad-bot" id="index">
@@ -346,6 +338,7 @@
     $(document).ready(function() {
       var status = 0;
       function index() {
+        $('.button-collapse').sideNav('hide');
         $("#menu").fadeOut(450);
         if (status == 1) {
           $("#test1").fadeOut(225, function() {
@@ -417,6 +410,7 @@
       };
 
       $('.modal').modal();
+      $(".button-collapse").sideNav();
 
       $("#test1-form").submit(function(e){check($(this).serializeArray(), 1); e.preventDefault();});
       $("#test2-form").submit(function(e){check($(this).serializeArray(), 2); e.preventDefault();});
@@ -427,9 +421,14 @@
 
       $("#test1-button").click(function(){t1()});
       $("#test2-button").click(function(){t2()});
+      
       $("#test1-button-head").click(function(){t1()});
       $("#test2-button-head").click(function(){t2()});
       $("#index-button-head").click(function(){index()});
+      
+      $("#test1-button-head-m").click(function(){t1()});
+      $("#test2-button-head-m").click(function(){t2()});
+      $("#index-button-head-m").click(function(){index()});
     });
   </script>
 
