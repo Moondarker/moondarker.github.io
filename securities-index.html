@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Рынок ценных бумаг</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <style>
+    .icon-block {
+      padding: 0 15px;
+    }
+
+    .icon-block .material-icons {
+    	font-size: inherit;
+    }
+
+    html { height: 100%; }
+
+    body {
+        min-height:100%;
+        position:relative;
+        padding-bottom: 60px
+    }
+
+    .page-footer {
+        position: absolute;
+        left: 0 ; right: 0; bottom: 0;
+        height: 60px
+    }
+
+    .question {
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-size: 125%;
+    }
+
+    #restext, #restext2 {
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+  </style>
+
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div id="menu" class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#test2" id="test2-button-head">Тест 2</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#test1" id="test1-button-head">Тест 1</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#index" id="index-button-head">Главная страница</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#test2" id="test2-button-head">Тест 2</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#test1" id="test1-button-head">Тест 1</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#index" id="index-button-head">Главная страница</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">Меню</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Рынок ценных бумаг</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Дополнение к ...</h5>
+      </div>
+      <br><br><br><br>
+      <div class="row center">
+        <a href="#test1" id="test1-button" class="btn-large waves-effect waves-light orange">Тест 1</a>
+        <a href="#test2" id="test2-button" class="btn-large waves-effect waves-light orange">Тест 2</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+  <div class="section no-pad-bot" id="test1">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12">Тест 1</h5>
+      </div>
+      <form action="#" id="test1-form">
+        <div class="card-panel white" id="t1q1">
+          <p class="question">
+            1. Доходы акционеров называются:
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="1" id="t1q1-1" value="1" />
+            <label for="t1q1-1">купонами</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="1" id="t1q1-2" value="2" />
+            <label for="t1q1-2">процентами</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="1" id="t1q1-3" value="3" />
+            <label for="t1q1-3">дивидендами</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="1" id="t1q1-4" value="4" />
+            <label for="t1q1-4">бонусами</label>
+          </p>
+        </div>
+        <div class="card-panel white" id="t1q2">
+          <p class="question">
+            2. Облигация является:
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="2" id="t1q2-1" value="1" />
+            <label for="t1q2-1">квалификационной ценной бумагой</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="2" id="t1q2-2" value="2" />
+            <label for="t1q2-2">долговой ценной бумагой</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="2" id="t1q2-3" value="3" />
+            <label for="t1q2-3">ордерной ценной бумагой</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="2" id="t1q2-4" value="4" />
+            <label for="t1q2-4">долевой ценной бумагой</label>
+          </p>
+        </div>
+        <div class="card-panel white" id="t1q3">
+          <p class="question">
+            3. Выпуск компанией доп. акций приведёт к увеличению:
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="3" id="t1q3-1" value="1" />
+            <label for="t1q3-1">уставного капитала компании</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="3" id="t1q3-2" value="2" />
+            <label for="t1q3-2">долгового капитала компании</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="3" id="t1q3-3" value="3" />
+            <label for="t1q3-3">заемного капитала компании</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="3" id="t1q3-4" value="4" />
+            <label for="t1q3-4">складочного капитала компании</label>
+          </p>
+        </div>
+        <div class="card-panel white" id="t1q4">
+          <p class="question">
+            4. Индекс Доу-Джонса отражает динамику:
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="4" id="t1q4-1" value="1" />
+            <label for="t1q4-1">промышленного производства</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="4" id="t1q4-2" value="2" />
+            <label for="t1q4-2">рынка инвестиций</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="4" id="t1q4-3" value="3" />
+            <label for="t1q4-3">рынка акций</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="4" id="t1q4-4" value="4" />
+            <label for="t1q4-4">всего рынка ценных бумаг</label>
+          </p>
+        </div>
+        <div class="card-panel white" id="t1q5">
+          <p class="question">
+            5. Как связаны рискованность и доходность ценной бумаги?
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="5" id="t1q5-1" value="1" />
+            <label for="t1q5-1">чем меньше рискованность, тем больше доходность</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="5" id="t1q5-2" value="2" />
+            <label for="t1q5-2">чем больше рискованность, тем больше доходность</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="5" id="t1q5-3" value="3" />
+            <label for="t1q5-3">доходность не зависит от степени рискованности</label>
+          </p>
+        </div>
+        <div class="row center">
+          <button class="btn-large waves-effect waves-light" type="submit" id="test1-check">Проверить
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="section no-pad-bot" id="test2">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12">Тест 2</h5>
+      </div>
+      <form action="#" id="test2-form">
+        <div class="card-panel white" id="t2q1">
+          <p class="question">
+            1. Опционы это ценные бумаги, которые:
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="1" id="t2q1-1" value="1" />
+            <label for="t2q1-1">обязывают поставить определённое количество ценных бумаг на определённую дату</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="1" id="t2q1-2" value="2" />
+            <label for="t2q1-2">обязывают купить определённое количество ценных бумаг в определённую дату</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="1" id="t2q1-3" value="3" />
+            <label for="t2q1-3">дают право на продажу или покупку определённого количества ценных бумаг по определённой цене, в определённую дату</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="1" id="t2q1-4" value="4" />
+            <label for="t2q1-4">дают право на продажу определённого количества ценных бумаг по определённой цене</label>
+          </p>
+        </div>
+        <div class="card-panel white" id="t2q2">
+          <p class="question">
+            2. Если инвестор вкладывает средства в акционерный капитал, такая операция оформляется инструментами собственности:
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="2" id="t2q2-1" value="1" />
+            <label for="t2q2-1">акциями</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="2" id="t2q2-2" value="2" />
+            <label for="t2q2-2">облигациями</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="2" id="t2q2-3" value="3" />
+            <label for="t2q2-3">векселями</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="2" id="t2q2-4" value="4" />
+            <label for="t2q2-4">аккредитивами</label>
+          </p>
+        </div>
+        <div class="card-panel white" id="t2q3">
+          <p class="question">
+            3. Какой из приведённых видов векселя существует:
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="3" id="t2q3-1" value="1" />
+            <label for="t2q3-1">хозяйственный</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="3" id="t2q3-2" value="2" />
+            <label for="t2q3-2">простой</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="3" id="t2q3-3" value="3" />
+            <label for="t2q3-3">сложный</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="3" id="t2q3-4" value="4" />
+            <label for="t2q3-4">материальный</label>
+          </p>
+        </div>
+        <div class="card-panel white" id="t2q4">
+          <p class="question">
+            4. На рынке ценных бумаг основными прямыми участниками финансовых операций являются:
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="4" id="t2q4-1" value="1" />
+            <label for="t2q4-1">эмитенты, инвесторы</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="4" id="t2q4-2" value="2" />
+            <label for="t2q4-2">кредиторы, поставщики</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="4" id="t2q4-3" value="3" />
+            <label for="t2q4-3">продавцы, покупатели</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="4" id="t2q4-4" value="4" />
+            <label for="t2q4-4">юридические и физические лица</label>
+          </p>
+        </div>
+        <div class="card-panel white" id="t2q5">
+          <p class="question">
+            5. Вид бумаг, которым можно пользоваться как на внутреннем, так и на внешнем рынке:
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="5" id="t2q5-1" value="1" />
+            <label for="t2q5-1">облигация</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="5" id="t2q5-2" value="2" />
+            <label for="t2q5-2">евроакция</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="5" id="t2q5-3" value="3" />
+            <label for="t2q5-3">вексель</label>
+          </p>
+          <p>
+            <input class="with-gap" type="radio" name="5" id="t2q5-4" value="4" />
+            <label for="t2q5-4">акция</label>
+          </p>
+        </div>
+        <div class="row center">
+          <button class="btn-large waves-effect waves-light" type="submit" id="test2-check">Проверить
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="results" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Результаты</h4>
+      <p id="restext"></p>
+      </br>
+      <p id="restext2"></p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Хорошо</a>
+    </div>
+  </div>
+
+  <footer class="page-footer orange">
+      <div class="container col s12">
+      Сделано с использованием <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+  </footer>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      var status = 0;
+      function index() {
+        $("#menu").fadeOut(450);
+        if (status == 1) {
+          $("#test1").fadeOut(225, function() {
+            $("#index").fadeIn(225);
+          });
+        } else {
+          $("#test2").fadeOut(225, function() {
+            $("#index").fadeIn(225);
+          });
+        }
+        status = 0;
+        console.log('status 0');
+      };
+
+      function t1() {
+        $("#menu").fadeIn(450);
+        if (status == 2) {
+          $("#test2").fadeOut(225, function() {
+            $("#test1").fadeIn(225);
+          });
+        } else {
+          $("#index").fadeOut(225, function() {
+            $("#test1").fadeIn(225);
+          });
+        }
+        status = 1;
+        console.log('status 1');
+      };
+
+      function t2() {
+        $("#menu").fadeIn(450);
+        if (status == 1) {
+          $("#test1").fadeOut(225, function() {
+            $("#test2").fadeIn(225);
+          });
+        } else {
+          $("#index").fadeOut(225, function() {
+            $("#test2").fadeIn(225);
+          });
+        }
+        status = 2;
+        console.log('status 2');
+      };
+
+      function check(fdata, testid) {
+        var errors = [], correct = 0
+            ans = {1: [3, 2, 1, 3, 2], 2: [3, 1, 2, 1, 2]},
+            ques = {1: ['t1q1', 't1q2', 't1q3', 't1q4', 't1q5'],
+                    2: ['t2q1', 't2q2', 't2q3', 't2q4', 't2q5']};
+
+        ans[testid].forEach(function(item, i) {
+          var row = $('#' + ques[testid][i]);
+          if (!row.hasClass('white')) row.addClass('white');
+          if (typeof(fdata[i]) == 'undefined') fdata[i] = {value: 0};
+          if (item != fdata[i].value) {
+            row.addClass('pink').removeClass('white');
+            //console.log (item.value + ' ' + ans[testid][i]);
+            errors.push(i + 1);
+          }
+        });
+        correct = 5 - errors.length;
+
+        $("#restext").text('Ваши результаты: ' + correct + '/5 (' + (correct * 20) + '%) верных ответов');
+        if (correct <= 4) $("#restext2").text('Ошибки в вопросах: ' + errors.join(', '));
+
+        $('#results').modal('open');
+        console.log (errors + ' ' + correct);
+      };
+
+      $('.modal').modal();
+
+      $("#test1-form").submit(function(e){check($(this).serializeArray(), 1); e.preventDefault();});
+      $("#test2-form").submit(function(e){check($(this).serializeArray(), 2); e.preventDefault();});
+
+      $("#menu").hide();
+      $("#test1").hide();
+      $("#test2").hide();
+
+      $("#test1-button").click(function(){t1()});
+      $("#test2-button").click(function(){t2()});
+      $("#test1-button-head").click(function(){t1()});
+      $("#test2-button-head").click(function(){t2()});
+      $("#index-button-head").click(function(){index()});
+    });
+  </script>
+
+  </body>
+</html>
