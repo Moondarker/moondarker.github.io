@@ -84,6 +84,17 @@
       }
       return inButton.replace('Space', 'Space Bar').replace('CapsLock', 'Caps Lock')
     }
+    
+    function getNewButton(oldButton) {
+      if (pool.length < 2) return pool[0]
+
+      let newButton = pool[Math.floor(Math.random() * pool.length)]
+
+      while (newButton === oldButton) {
+        newButton = pool[Math.floor(Math.random() * pool.length)]
+      }
+      return newButton
+    }
 
     let pool = ['KeyH', 'ShiftLeft', 'AltLeft', 'Space', 'KeyR', 'KeyC']
     let percentPerPress = 2
@@ -98,8 +109,14 @@
       const curButtText = curButt.firstElementChild
 
       let progress = 0
+
+      let startTime = 0
+      let lastTime = 0
+      let bestTime = -1
+
       let goodRuns = 0
       let badRuns = 0
+
       let currentButton = pool[Math.floor(Math.random() * pool.length)]
       curButtText.innerText = innerToDisplay(currentButton)
 
@@ -113,9 +130,14 @@
         if (event.code === currentButton) {
           curButt.classList.add('buttonAnimated')
 
+          if (progress < percentPerPress) startTime = new Date()
+
           if (progress < 100) {
             progress += percentPerPress
           } else {
+            lastTime = new Date() - startTime
+            if (lastTime < bestTime || bestTime < 0) bestTime = lastTime
+
             goodRuns += 1
             progress = 0
           }
@@ -124,12 +146,12 @@
           progress = 0
         }
 
-        currentButton = pool[Math.floor(Math.random() * pool.length)]
+        currentButton = getNewButton(currentButton)
         curButtText.innerText = innerToDisplay(currentButton)
 
         progressBar.style.width = `${progress}%`
 
-        goodRunsEl.innerText = `Good runs: ${goodRuns}`
+        goodRunsEl.innerText = `Good runs: ${goodRuns}${bestTime !== -1 ? `; L: ${~~(lastTime / 1000 / 60)}:${(lastTime / 1000 % 60).toFixed(4)}, B: ${~~(bestTime / 1000 / 60)}:${(bestTime / 1000 % 60).toFixed(4)}` : ''}`
         badRunsEl.innerText = `Bad runs: ${badRuns}`
         pPPEl.innerText = `percentPerPress = ${percentPerPress}`
         poolEl.innerText = `pool = ['${pool.join('\', \'')}']`
