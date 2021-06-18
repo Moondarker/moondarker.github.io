@@ -125,7 +125,7 @@
       });
 
       document.addEventListener('keydown', function (event) {
-        if (!pool.includes('LeftControl') && event.ctrlKey || event.code === 'F5') return null
+        if (!pool.includes('LeftControl') && event.ctrlKey || ['F1', 'F5', 'F11', 'F12'].includes(event.code)) return null
 
         if (event.code === currentButton) {
           curButt.classList.add('buttonAnimated')
