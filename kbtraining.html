@@ -19,6 +19,7 @@
     body,
     html {
       height: 100%;
+      margin: 0;
       display: grid;
     }
 
@@ -32,6 +33,7 @@
 
     .cumStats {
       font-weight: 200;
+      font-size: 150%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: rgb(231, 231, 231);
     }
@@ -46,12 +48,12 @@
       border-radius: 15px;
       background: #5b5c59;
       padding: 5px 15px;
-      min-width: 56px;
+      min-width: 96px;
       width: fit-content;
       height: fit-content;
       margin: auto;
 
-      font-size: 24;
+      font-size: 36;
       font-weight: bold;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: rgb(255, 255, 255);
@@ -106,7 +108,7 @@
       });
 
       document.addEventListener('keydown', function (event) {
-        if (!pool.includes('LeftControl') && event.ctrlKey) return null;
+        if (!pool.includes('LeftControl') && event.ctrlKey || event.code === 'F5') return null
 
         if (event.code === currentButton) {
           curButt.classList.add('buttonAnimated')
